@@ -1,35 +1,47 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700|Roboto&display=swap');
 body {
-    background: linear-gradient(rgb(238, 240, 248), rgb(5, 52, 78));
-    color: #0af;
-}
-
-h2 {
-    color: #000;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    background: linear-gradient(rgb(238, 240, 248), rgb(190, 220, 225));
+    margin-top: 120px;
 }
 
 #main-header {
     border-bottom: 2px solid #000;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(21, 32, 43);
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    top: 0px;
+    left: 0px;
+    padding: 5px;
 }
 
-
-
-#praias {
+.all-places {
     width: 1200px;
     margin: auto;
     color: #000;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 article {
-    max-width: 31%;
+    max-width: 30%;
     display: inline-block;
     font-family: 'Roboto', sans-serif;
-    border: 1px solid #000;
-    border-radius: 1%;
     padding: 10px;
+    background-color: rgb(141, 184, 221);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    margin: 0px 5px;
+    transition: box-shadow 500ms, background-color 1s, filter .5s;
+    opacity: 0.7;
+    filter: brightness(80%);
+}
+
+article:hover{
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.7);
+    opacity: 1;
+    background-color: rgb(184, 215, 245);
+    filter: brightness(100%);
 }
 
 .article-img {
@@ -37,4 +49,21 @@ article {
     height: 250px;
     background-size: cover !important;
     background-position: center !important;
+}
+
+.more-link {
+    font-style: italic;
+}
+
+.bolded-link {
+    font-weight: 700;
+}
+
+.more-link.bolded-link {
+    color: rgb(145, 72, 12);
+}
+
+footer {
+    text-align: center;
+    color: #0af;
 }
